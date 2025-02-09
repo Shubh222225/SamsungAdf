@@ -33,7 +33,7 @@
 							"typeProperties": {
 								"variableName": "RelativeUrl",
 								"value": {
-									"value": "@item().RelativeURL",
+									"value": "@item().InterfaceNo",
 									"type": "Expression"
 								}
 							}
