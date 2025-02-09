@@ -31,9 +31,9 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "InterfaceNo",
+								"variableName": "Rooturl",
 								"value": {
-									"value": "@item().InterfaceNo",
+									"value": "@item().Rooturl",
 									"type": "Expression"
 								}
 							}
