@@ -1,0 +1,22 @@
+{
+	"name": "Sourcedata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SharepointServer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Shubh222225/SamsungAdf/refs/heads/main/Fact_Sales_2.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

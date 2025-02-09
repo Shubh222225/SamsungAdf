@@ -1,0 +1,23 @@
+{
+	"name": "Sourcedelimited",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BlobSource",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "file2.csv",
+				"container": "sourcedataforprocess"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
