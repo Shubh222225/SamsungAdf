@@ -1,11 +1,6 @@
 {
 	"name": "SharepointServer",
 	"properties": {
-		"parameters": {
-			"FileName": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
