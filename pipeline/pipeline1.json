@@ -70,9 +70,9 @@
 		],
 		"variables": {
 			"InterfaceNo": {
-				"type": "Integer"
+				"type": "String"
 			},
-			"RootUrl": {
+			"Rooturl": {
 				"type": "String"
 			},
 			"RelativeUrl": {
