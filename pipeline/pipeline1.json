@@ -24,8 +24,6 @@
 						{
 							"name": "Copy data1_copy1",
 							"type": "Copy",
-							"state": "Inactive",
-							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [],
 							"policy": {
 								"timeout": "0.12:00:00",
@@ -70,7 +68,13 @@
 							"inputs": [
 								{
 									"referenceName": "Sourcedata",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"RelativeUrl": {
+											"value": "@item().RelativeURL",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
@@ -79,15 +83,6 @@
 									"type": "DatasetReference"
 								}
 							]
-						},
-						{
-							"name": "Wait1",
-							"type": "Wait",
-							"dependsOn": [],
-							"userProperties": [],
-							"typeProperties": {
-								"waitTimeInSeconds": 1
-							}
 						}
 					]
 				}
