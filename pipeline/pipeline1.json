@@ -76,7 +76,7 @@
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
 										"quoteAllText": true,
-										"fileExtension": ".txt"
+										"fileExtension": ".csv"
 									}
 								},
 								"enableStaging": false,
@@ -91,16 +91,13 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "Sourcedata",
-									"type": "DatasetReference",
-									"parameters": {
-										"RelativeUrl": "Shubh222225/SamsungAdf/blob/main/Fact_Sales_2.csv"
-									}
+									"referenceName": "DelimitedText1",
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "Sourcedelimited",
+									"referenceName": "DelimitedText2",
 									"type": "DatasetReference"
 								}
 							]
