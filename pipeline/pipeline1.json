@@ -94,10 +94,7 @@
 									"referenceName": "Sourcedata",
 									"type": "DatasetReference",
 									"parameters": {
-										"RelativeUrl": {
-											"value": "@item().RelativeUrl",
-											"type": "Expression"
-										}
+										"RelativeUrl": "Shubh222225/SamsungAdf/blob/main/Fact_Sales_2.csv"
 									}
 								}
 							],
