@@ -15,10 +15,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": {
-					"value": "@dataset().RelativeUrl",
-					"type": "Expression"
-				}
+				"relativeUrl": "Shubh222225/SamsungAdf/blob/main/Fact_Sales_2.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
