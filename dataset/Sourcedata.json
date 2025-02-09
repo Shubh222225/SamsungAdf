@@ -5,12 +5,20 @@
 			"referenceName": "SharepointServer",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"RelativeUrl": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "Shubh222225/SamsungAdf/refs/heads/main/Fact_Sales_2.csv"
+				"relativeUrl": {
+					"value": "@dataset().RelativeUrl",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
