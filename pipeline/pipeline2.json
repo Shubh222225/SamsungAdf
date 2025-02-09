@@ -66,9 +66,9 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "RelativeUrl",
+								"variableName": "SourceTableName",
 								"value": {
-									"value": "@item().RelativeUrl",
+									"value": "@item().SourceTableName",
 									"type": "Expression"
 								}
 							}
@@ -148,6 +148,9 @@
 				"type": "String"
 			},
 			"RelativeUrl": {
+				"type": "String"
+			},
+			"SourceTableName": {
 				"type": "String"
 			}
 		},
