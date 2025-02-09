@@ -15,6 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().PFileName",
+					"type": "Expression"
+				},
 				"container": "sourcesamsungdata"
 			},
 			"columnDelimiter": ",",

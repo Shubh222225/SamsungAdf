@@ -132,7 +132,13 @@
 							"outputs": [
 								{
 									"referenceName": "SamsungSource",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"PFileName": {
+											"value": "@item().SourceTableName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
