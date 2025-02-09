@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Script1').output",
+						"value": "@activity('Script1').output.resultSets[0].rows",
 						"type": "Expression"
 					},
 					"isSequential": true,
@@ -24,6 +24,8 @@
 						{
 							"name": "Copy data1_copy1",
 							"type": "Copy",
+							"state": "Inactive",
+							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [],
 							"policy": {
 								"timeout": "0.12:00:00",
@@ -77,6 +79,15 @@
 									"type": "DatasetReference"
 								}
 							]
+						},
+						{
+							"name": "Wait1",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 1
+							}
 						}
 					]
 				}
